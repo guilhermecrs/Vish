@@ -178,49 +178,7 @@ button {
     margin-top: auto;
 }
 
-/* Adicionando regras de mídia para dispositivos menores */
 
-@media (max-width: 768px) {
-    .painel,
-    .painel2 {
-        width: 95%; /* Redimensiona o painel para preencher a largura da tela */
-        padding: 15px; /* Adiciona um pouco de espaço interno */
-    }
-
-    .slider,
-    .slides,
-    .slide,
-    img {
-        width: 100%; /* Redimensiona as imagens e os elementos do slider para preencher a largura do painel */
-    }
-
-    .manual-navigation {
-        margin-left: 0; /* Alinha a navegação manual ao centro */
-    }
-
-    .navigation-auto {
-        width: 95%; /* Redimensiona a barra de navegação automática para preencher a largura da tela */
-        margin-left: auto;
-        margin-right: auto; /* Alinha a barra de navegação automática ao centro */
-    }
-
-    .navigation-auto div:not(:last-child) {
-        margin-right: 20px; /* Espaçamento menor entre os botões da barra de navegação automática */
-    }
-
-    #radio1:checked~.navigation-auto .auto-btn1,
-    #radio2:checked~.navigation-auto .auto-btn2,
-    #radio3:checked~.navigation-auto .auto-btn3,
-    #radio4:checked~.navigation-auto .auto-btn4 {
-        background-color: white; /* Cor de fundo para indicar qual slide está ativo */
-    }
-}
-
-@media (max-width: 480px) {
-    .manual-btn {
-        width: 6px;
-        height: 6px; /* Redimensiona os botões de navegação manual */
-    }
 
     button {
         height: 35px;

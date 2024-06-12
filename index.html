@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/PaginaPrincipal/index.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="/img/Tranquilidade.ico">
+    <title>Feliz 1 ano princesa</title>
+</head>
+
+<body>
+    <div class="painel">
+        <h1>Feliz 1 ano</h1>
+        <img src="https://imagensfree.com.br/wp-content/uploads/2021/04/ezgif-3-1eb5af1dab88.gif" alt="GIF de celebração">
+
+        <h2>Ainda me ama??</h2>
+        <a href="/PaginaPrincipal/SegundaAba/index_2.html">
+            <button id="sim">Sim!!!</button>
+        </a>
+        <button onmouseover="fuja()" id="nao">Não!!!</button>
+    </div>
+
+    <div class="more-info">
+        <h2>Nossa História</h2>
+        <p>Foi há 12 meses que nossa história começou.
+            Quem diria que duas pessoas poderiam se apaixonar em apenas dois dias?
+            Muitos dizem que é rápido demais; outros comentam: "Nossa, vocês são loucos!" Mas, na verdade,
+            tudo foi questão de conexão e confiança.</p>
+        <p>Eu poderia ter dito "não, vamos devagar, vamos nos conhecer melhor" e transformado tudo no mesmo ciclo de
+            sempre. Poderíamos ter perdido o interesse por preocupações, pensando que o outro estava com medo ou se
+            sentia como segunda opção. Quando há uma conexão, por que ter medo? Às vezes, a pessoa certa está bem na
+            nossa frente, e nós simplesmente não percebemos. A vida nem sempre é superficial;
+            ainda existem pessoas que valorizam sentimentos e carinho. E essa pessoa é você.</p>
+        <p>Você acha que eu gosto tanto da série "How I Met Your Mother" por acaso? Querendo ou não, eu me vejo muito no
+            Ted Mosby. Ainda acredito e sempre acreditei no destino. Sou aquele personagem que as pessoas julgam idiota
+            por acreditar nisso. Eles me perguntavam: "Por que você pensa dessa maneira?" É porque eu ainda acredito no
+            amor, na química e no destino.
+            As coisas acontecem como têm que acontecer, e eu tinha que amar do jeito que foi destinado.</p>
+        <p>O que tenho a dizer sobre nós é que é perfeito. Temos uma conexão que nunca vi em nenhum outro lugar. Você
+            foi amor à primeira vista. Sempre falamos que somos muito diferentes e muito iguais ao mesmo tempo. Você é a
+            certeza na minha incerteza. Assim que te conheci, sabia como tudo iria ser, tanto que desde o primeiro dia
+            eu já queria sair com você no dia seguinte.
+            Eu diria que nosso primeiro ano juntos é muito importante, de muitos outros que virão. Você é a menina, a
+            garota e a mulher com quem sonho e sonhei. Você é uma garotinha que teve uma vida difícil, mas eu sou a sua
+            paciência, meu amor. Te amo!
+        </p>
+        <h2>É por isso que eu te amo! Feliz 1 ano, meu amor &#10084;</h2>
+        <div class="video-container">
+            <video id="background-video" class="background-video" autoplay loop muted>
+                <source src="/img/Videofav.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+        <div class="control-buttons">
+            <button id="play-button" class="control-button">Iniciar</button>
+            <button id="pause-button" class="control-button">Pausar</button>
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class="image-container">
+                <img src="/img/AnnaPainel.jpeg" alt="Imagem 1" class="grid-image">
+                <div class="relato"></div>
+            </div>
+            <p>Você</p>
+        </div>
+        <div class="grid-item">
+            <div class="image-container">
+                <img src="/img/MiguelPainel.jpeg" alt="Imagem 2" class="grid-image">
+                <div class="relato"></div>
+            </div>
+            <p>Você e o Miguel</p>
+        </div>
+        <div class="grid-item">
+            <div class="image-container">
+                <img src="/img/NosPainel.jpeg" alt="Imagem 3" class="grid-image">
+                <div class="relato"></div>
+            </div>
+            <p>Eu e Você</p>
+        </div>
+        <div class="grid-item">
+            <div class="image-container">
+                <video id="background-video" class="background-video" autoplay loop muted>
+                    <source src="/img/Evangeline.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+                <div class="relato"></div>
+            </div>
+            <p>Evangeline kkkk</p>
+        </div>
+    </div>
+
+    <script>
+    function fuja() {
+    var naoBtn = document.getElementById("nao");
+    
+    // Obter as dimensões do botão
+    var btnWidth = naoBtn.offsetWidth;
+    var btnHeight = naoBtn.offsetHeight;
+    
+    // Obter as dimensões da tela
+    var screenWidth = window.innerWidth;
+    var screenHeight = window.innerHeight;
+    
+    // Calcular as novas posições com base nas dimensões da tela e do botão
+    var newLeft = Math.random() * (screenWidth - btnWidth);
+    var newTop = Math.random() * (screenHeight - btnHeight);
+    
+    naoBtn.style.position = "absolute";
+    naoBtn.style.left = newLeft + 'px';
+    naoBtn.style.top = newTop + 'px';
+}
+
+
+
+        document.getElementById('play-button').addEventListener('click', function () {
+            var video = document.getElementById('background-video');
+            video.play();
+        });
+
+        document.getElementById('pause-button').addEventListener('click', function () {
+            var video = document.getElementById('background-video');
+            video.pause();
+        });
+    </script>
+</body>
+
+</html>

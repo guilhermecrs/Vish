@@ -1,0 +1,192 @@
+/* Reset básico para margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/img/Nuvens.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+/* Responsividade para o painel principal */
+.painel {
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 20px;
+    padding: 25px;
+    margin-top: 20px;
+    
+}
+
+.painel img {
+    display: block;
+    margin: 25px auto 0;
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+/* Responsividade para os títulos */
+h1, h2 {
+    margin: 20px 0;
+}
+
+/* Responsividade para os botões */
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #ECD3B9;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+#sim {
+    background-color: #D6A2A3;
+    margin-left: -25px;
+}
+
+#nao {
+    background-color: #D6A2A3;
+    position: relative; /* Alterado para relativo */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 480px) {
+    #sim, #nao {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+/* Responsividade para a seção de informações adicionais */
+.more-info {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    margin: 20px 0;
+    
+}
+
+.more-info p {
+    margin-bottom: 10px;
+}
+
+.more-info img {
+    max-width: 50%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 25px;
+}
+
+/* Responsividade para os contêineres de vídeo */
+ .video-container2 {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 25px;
+    margin: 20px auto;
+}
+
+ .video-container2 video {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsividade para o contêiner do primeiro vídeo */
+.video-container{
+    width: 80%;
+    max-width: 400px;
+    overflow: hidden;
+    border-radius: 15px; /* Bordas arredondadas */
+    margin: 20px auto; /* Centraliza o contêiner do vídeo */
+}
+
+/* Responsividade para os botões de controle */
+.control-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.control-button {
+    padding: 10px 20px;
+    background-color: #D6A2A3;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid black;
+    text-align: center;
+}
+
+/* Responsividade para os contêineres de imagem */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto; /* Centraliza o grid */
+    text-align: center; /* Alinha o texto no meio */
+}
+
+/* Responsividade para as imagens */
+.grid-item img,
+.image-container video {
+    height: auto;
+    max-height: 200px; /* Altura máxima para as imagens */
+    border-radius: 15px; /* Bordas arredondadas */
+    text-align: center; /* Alinha o texto no meio */
+}
+
+/* Centraliza os contêineres de imagem */
+.grid-item {
+    margin: 0 auto; /* Centraliza os contêineres */
+}
+
+
+
+/* Media query para dispositivos menores */
+@media (max-width: 768px) {
+    .painel, .more-info {
+        width: 95%;
+        padding: 20px;
+    }
+
+    button {
+        width: 80px;
+        height: 35px;
+    }
+}
+
+/* Media query para dispositivos ainda menores */
+@media (max-width: 480px) {
+    #sim, #nao {
+        margin-left: 0;
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
